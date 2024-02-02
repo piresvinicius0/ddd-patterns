@@ -35,6 +35,10 @@ export default class Product {
         this._price = newPrice;
     }  
 
+    get id(): string {
+        return this._id;
+    }
+    
     get price(): number {
         return this._price;
     }
