@@ -8,9 +8,9 @@ import OrderItemModel from "./order-item.model";
 })
 export default class OrderModel extends Model {
 
-    @PrimaryKey
-    @Column({allowNull: false})
-    declare id: string;
+   @PrimaryKey
+   @Column
+   declare id: string;
 
    @ForeignKey(() => CustomerModel)
    @Column({allowNull: false})
